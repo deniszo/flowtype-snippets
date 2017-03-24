@@ -1,0 +1,15 @@
+{
+  "name": "flowtype-snippets",
+  "version": "0.0.1",
+  "description": "A collection of reusable flow constructs",
+  "main": "types.flow.js",
+  "repository": "https://github.com/faliah/flowtype-snippets.git",
+  "author": "Denis Zolkin <dezolkin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "flow-bin": "^0.42.0"
+  },
+  "scripts": {
+    "flow": "flow"
+  }
+}
