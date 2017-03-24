@@ -3,5 +3,7 @@
 [include]
 
 [libs]
+react-examples/Actions.js
+react-examples/State.js
 
 [options]
