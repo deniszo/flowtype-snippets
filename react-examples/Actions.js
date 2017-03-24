@@ -1,11 +1,9 @@
 // @flow
 
-//import type { User } from './State';
-
 const actionTypes = {
   add   : 'add',
   remove: 'remove'
-}
+};
 
 export type ActionTypes = $Keys<typeof actionTypes>;
 
@@ -13,12 +11,6 @@ export type Action<T, P> = {
   type       : T,
   [x: string]: P
 }
-
-// type User = {
-//   id     : string,
-//   name   : string,
-//   company: string
-// }
 
 const addUser = (user: User): Action<ActionTypes, User> => ({
   // any type, except string 'add'/remove' or
@@ -29,3 +21,11 @@ const addUser = (user: User): Action<ActionTypes, User> => ({
   // otherwise an error is thrown
   user
 });
+
+const actionProduct = addUser({
+  company: 'Test Company',
+  id: 'test',
+  name: 'Test User'
+});
+
+console.log(actionProduct.type);
